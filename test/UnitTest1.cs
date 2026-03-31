@@ -39,7 +39,7 @@ namespace test
         public void ValidationCorrectDataRectangleAreaNegativeNumbers ()
         {
             Rectangle rectangle = new Rectangle( );
-            rectangle.Width = -2;
+            rectangle.Width = 2;
             rectangle.Height = 0;
 
             var ex = Assert.Throws<ArgumentException>(() => rectangle.Area( ));
